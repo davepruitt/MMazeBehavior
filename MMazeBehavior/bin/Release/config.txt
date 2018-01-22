@@ -1,0 +1,2 @@
+Booth: 1
+Save Path: ./Saved Sessions/

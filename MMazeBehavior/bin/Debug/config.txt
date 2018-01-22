@@ -1,0 +1,3 @@
+Booth: 1
+Stages: https://docs.google.com/spreadsheets/d/e/2PACX-1vRJXqCw99QwM3uhOCvOEvR8ugQwiJQ8-QHcVa9mDVOe6lFsqdfj47M-LbLJLLn3i1gWEHvqDY37oUla/pub?output=tsv
+Save Path: ./Saved Sessions/

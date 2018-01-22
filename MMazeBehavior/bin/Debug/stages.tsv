@@ -1,0 +1,4 @@
+Stage Name	Stage Description	Sound 1 File Name	Sound 1 Description	Sound 2 File Name	Sound 2 Description	Refractory Period Between Sounds	Max Sound Delays
+Training	Training stage with no sounds						
+Gun	Stage with 30-second long gunfire sounds	track001.wav	Warzone			300, 45, 45, 45, 45	300, 300, 300, 300, 300
+David Test	Stage with 30-second long gunfire sounds	track001.wav	Warzone			45, 45, 45, 45, 45	30, 30, 30, 30, 30
