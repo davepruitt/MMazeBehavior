@@ -27,6 +27,7 @@ namespace MMazeBehavior
 
         public string StageName = string.Empty;
         public string StageDescription = string.Empty;
+        public MMazeStageCueType StageCueType = MMazeStageCueType.Undefined;
         public List<Tuple<string, string>> SoundFiles = new List<Tuple<string, string>>();
         public List<int> StageRefractoryPeriods = new List<int>();
         public List<int> StageMaxSoundDelays = new List<int>();

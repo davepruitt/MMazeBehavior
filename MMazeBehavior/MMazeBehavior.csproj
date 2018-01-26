@@ -134,6 +134,8 @@
     <Compile Include="MMazeEventNamesShortDescriptionAttribute.cs" />
     <Compile Include="MMazeFileWriter.cs" />
     <Compile Include="MMazeMessaging.cs" />
+    <Compile Include="MMazeStageCueType.cs" />
+    <Compile Include="MMazeStageCueTypeConverter.cs" />
     <Compile Include="MMazeTrialState.cs" />
     <Compile Include="MMazeVideoFileWriter.cs" />
     <Compile Include="ReactToModelPropertyChanged.cs" />
@@ -183,9 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="License-LGPL.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('..\packages\Accord.3.8.0\build\Accord.targets')" />

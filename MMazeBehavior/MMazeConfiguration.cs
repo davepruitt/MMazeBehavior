@@ -118,6 +118,9 @@ namespace MMazeBehavior
                 var s2_name = this_row[5].Trim();
                 var refractory_list = this_row[6].Trim();
                 var max_delay_list = this_row[7].Trim();
+                var cue_type = this_row[8].Trim();
+
+                var actual_cue_type = MMazeStageCueTypeConverter.ConvertFullDescriptionToMMazeCueType(cue_type);
 
                 //Add the first sound file, if it is defined
                 if (!string.IsNullOrEmpty(s1_file) && !string.IsNullOrEmpty(s1_name))
@@ -144,6 +147,7 @@ namespace MMazeBehavior
                 //Set the variables within the stage object
                 new_stage.StageRefractoryPeriods = refractory_periods;
                 new_stage.StageMaxSoundDelays = max_delay_periods;
+                new_stage.StageCueType = actual_cue_type;
 
                 //Add this new stage to the list of loaded stages
                 LoadedStages.Add(new_stage);

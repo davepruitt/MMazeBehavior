@@ -525,7 +525,11 @@ namespace MMazeBehavior
                             if (latest_event.EventType == MMazeEventNames.LeftProxEnter)
                             {
                                 TrialState = MMazeTrialState.LeftToRight_EnterLeftProx;
-                                HandleBeamBreak();
+
+                                if (CurrentStage.StageCueType == MMazeStageCueType.ProximitySensor)
+                                {
+                                    HandleBeamBreak();
+                                }
                             }
 
                             break;
@@ -535,7 +539,11 @@ namespace MMazeBehavior
                             if (latest_event.EventType == MMazeEventNames.RightProxEnter)
                             {
                                 TrialState = MMazeTrialState.RightToLeft_EnterRightProx;
-                                HandleBeamBreak();
+
+                                if (CurrentStage.StageCueType == MMazeStageCueType.ProximitySensor)
+                                {
+                                    HandleBeamBreak();
+                                }
                             }
 
                             break;
@@ -545,6 +553,11 @@ namespace MMazeBehavior
                             if (latest_event.EventType == MMazeEventNames.RightNosepokeEnter)
                             {
                                 TrialState = MMazeTrialState.NoTrialStarted;
+
+                                if (CurrentStage.StageCueType == MMazeStageCueType.Nosepoke)
+                                {
+                                    HandleBeamBreak();
+                                }
                             }
 
                             break;
@@ -554,6 +567,11 @@ namespace MMazeBehavior
                             if (latest_event.EventType == MMazeEventNames.LeftNosepokeEnter)
                             {
                                 TrialState = MMazeTrialState.NoTrialStarted;
+
+                                if (CurrentStage.StageCueType == MMazeStageCueType.Nosepoke)
+                                {
+                                    HandleBeamBreak();
+                                }
                             }
 
                             break;
