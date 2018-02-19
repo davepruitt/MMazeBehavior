@@ -69,3 +69,4 @@ Z:\TBI\Behavior Code\MMazeBehavior\MMazeBehavior\obj\Release\MMazeBehavior.Prope
 Z:\TBI\Behavior Code\MMazeBehavior\MMazeBehavior\obj\Release\MMazeBehavior.csproj.GenerateResource.Cache
 Z:\TBI\Behavior Code\MMazeBehavior\MMazeBehavior\obj\Release\MMazeBehavior.exe
 Z:\TBI\Behavior Code\MMazeBehavior\MMazeBehavior\obj\Release\MMazeBehavior.pdb
+Z:\TBI\Behavior Code\MMazeBehavior\MMazeBehavior\obj\Release\MMazeBehavior.csprojResolveAssemblyReference.cache

@@ -340,6 +340,33 @@ namespace MMazeBehavior
             }
         }
 
+        [ReactToModelPropertyChanged(new string[] { "LeftFeedCount" })]
+        public string LeftFeeds
+        {
+            get
+            {
+                return _session.LeftFeedCount.ToString();
+            }
+        }
+
+        [ReactToModelPropertyChanged(new string[] { "RightFeedCount" })]
+        public string RightFeeds
+        {
+            get
+            {
+                return _session.RightFeedCount.ToString();
+            }
+        }
+
+        [ReactToModelPropertyChanged(new string[] { "LeftFeedCount", "RightFeedCount" })]
+        public string TotalFeeds
+        {
+            get
+            {
+                return (_session.LeftFeedCount + _session.RightFeedCount).ToString();
+            }
+        }
+        
         [ReactToModelPropertyChanged(new string[] { "LeftProxState" })]
         public bool LeftProxState
         {
