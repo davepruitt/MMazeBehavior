@@ -468,6 +468,16 @@ namespace MMazeBehavior
                         var time_since_last_feed = DateTime.Now - _most_recent_feed;
                         _most_recent_feed = DateTime.Now;
 
+                        switch (latest_event.EventType)
+                        {
+                            case MMazeEventNames.LeftFeederTriggered:
+                                LeftFeedCount++;
+                                break;
+                            case MMazeEventNames.RightFeederTriggered:
+                                RightFeedCount++;
+                                break;
+                        }
+
                         FeedList_TimeSincePreviousFeed.Add(Convert.ToInt32(time_since_last_feed.TotalSeconds));
                         FeedList_TimeSinceSessionStart.Add(Convert.ToInt32(timer.Elapsed.TotalSeconds));
                         _background_properties_to_update.Add("FeedList");

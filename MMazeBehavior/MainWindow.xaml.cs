@@ -48,6 +48,7 @@ namespace MMazeBehavior
                 Accord.Video.DirectShow.FilterCategory.VideoInputDevice);
             List<Accord.Video.DirectShow.FilterInfo> my_list = j.Cast<Accord.Video.DirectShow.FilterInfo>().ToList();
             Accord.Video.DirectShow.FilterInfo my_camera = my_list.Where(x => x.Name.Equals("HD USB Camera")).FirstOrDefault();
+            //Accord.Video.DirectShow.FilterInfo my_camera = my_list.Where(x => x.Name.Contains("Logitech")).FirstOrDefault();
             if (my_camera != null)
             {
                 //Set up the camera as the capture devices
